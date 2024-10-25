@@ -9,12 +9,32 @@
     {% tailwind_css %}
 </head>
 
-<body class="bg-[url('http://127.0.0.1:8000/static/img/pink-floral-pattern.png')] bg-cover font-serif leading-normal tracking-normal bg-custom p-5 bg-fixed">
-    <div class="bg-red-100 container w-full mx-auto">
-        <section class="flex items-center justify-center flex-col">
-            <h1 class="text-xl">Django + Tailwind = ❤️</h1>
-            <h2 class="text-xl">Welcome to da home page pimpin</h2>
-        </section>
+<body class="bg-red-200 max-h-screen bg-cover font-serif leading-normal tracking-normal bg-custom bg-fixed">
+    <nav class="bg-gray-800 w-full p-2 fixed z-10 top-0">
+        <div class="flex items-center justify-between w-full px-4">
+            <div class="flex items-center text-white font-extrabold">
+                <a class="text-white no-underline hover:text-white hover:no-underline" href="#">
+                    <span class="text-2xl">Cafe Lexi</span>
+                </a>
+            </div>
+            <div class="flex items-center">
+                <ul class="list-reset flex space-x-4 items-center">
+                    <li>
+                        <a class="inline-block py-2 px-4 text-white no-underline" href="#">Active</a>
+                    </li>
+                    <li>
+                        <a class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4" href="#">Link</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="h-screen border-4 p-auto mx-auto w-full flex items-center justify-center flex-col p-2">
+        <div class="divide-y-2 divide-solid p-3 border-4 rounded-lg shadow-xl margin-auto max-w-lg w-full">
+            <h1 class="text-xl">This is a box</h1>
+            <h2 class="text-xl">It'll be filled with stuff!</h2>
+        </div>
     </div>
 </body>
 </html>
