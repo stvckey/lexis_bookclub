@@ -1,0 +1,20 @@
+{% load static tailwind_tags %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Django Tailwind</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    {% tailwind_css %}
+</head>
+
+<body class="bg-[url('http://127.0.0.1:8000/static/img/pink-floral-pattern.png')] bg-cover font-serif leading-normal tracking-normal bg-custom p-5 bg-fixed">
+    <div class="bg-red-100 container w-full mx-auto">
+        <section class="flex items-center justify-center flex-col">
+            <h1 class="text-xl">Django + Tailwind = ❤️</h1>
+            <h2 class="text-xl">Welcome to da blog page pimpin</h2>
+        </section>
+    </div>
+</body>
+</html>

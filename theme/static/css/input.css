@@ -1,0 +1,7 @@
+/* input.css */
+.bg-custom {
+    background-image: url('/static/img/pink-floral-pattern.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
